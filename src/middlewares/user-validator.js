@@ -6,6 +6,8 @@ import { validateJWT } from "./validate-jwt.js";
 import { hasRoles } from "./validate-roles.js";
 
 export const registerValidator = [
+    validateJWT,
+    hasRoles("ADMIN_ROLE"),
     body("name").notEmpty().withMessage("The name is required"),
     body("username").notEmpty().withMessage("The user is required"),
     body("email").notEmpty().withMessage("Email is required"),
