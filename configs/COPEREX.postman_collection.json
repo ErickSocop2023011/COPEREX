@@ -50,7 +50,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\":\"Admin3\",\r\n    \"password\":\"Abc123**\"\r\n}",
+							"raw": "{\r\n    \"username\":\"admin1\",\r\n    \"password\":\"admin123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
