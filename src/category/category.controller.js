@@ -1,5 +1,5 @@
 import Category from './category.model.js';
-//import Company from '../company.model.js'
+import Company from '../company/company.model.js'
 
 export const addCategory = async (req, res) => {
     try {
@@ -48,7 +48,7 @@ export const deleteCategory = async (req, res) => {
     try {
         const { cid } = req.params;
         const category = await Category.findByIdAndUpdate(cid, { status: false }, { new: true });
-        /*const defaultCategory = await Category.findOne({ name: 'default' });
+        const defaultCategory = await Category.findOne({ name: 'default' });
 
         const company = await Company.find({ category: cid });
 
@@ -57,7 +57,7 @@ export const deleteCategory = async (req, res) => {
                 comp.category = defaultCategory._id;
                 return comp.save();
             })
-        );*/
+        );
 
         return res.status(200).json({
             success: true,
