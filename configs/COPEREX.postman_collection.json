@@ -1,0 +1,535 @@
+{
+	"info": {
+		"_postman_id": "82b1299a-d88e-48f0-903d-08339fe8383d",
+		"name": "COPEREX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37667709"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Erick\",\r\n    \"surname\":\"Socop\",\r\n    \"username\":\"esocop\",\r\n    \"email\":\"esocop@gmail.com\",\r\n    \"password\":\"Kin4l2311@o6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Admin3\",\r\n    \"password\":\"Abc123**\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmOTAxYjM5NGRiMThmMjIyYmViYjkiLCJpYXQiOjE3NDA2MDc5MzgsImV4cCI6MTc0MDYxMTUzOH0.nssQs0A2QwcisxYVB9_xxrEkl57tnNYFumUWZlqdHJg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Admin2\",\r\n    \"surname\":\"Admin2\",\r\n    \"username\":\"admin123\",\r\n    \"email\":\"admin2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/user/updateUser/67bf903c1c9af30063960502",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"user",
+								"updateUser",
+								"67bf903c1c9af30063960502"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Me /Only Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmOTAxYjM5NGRiMThmMjIyYmViYjkiLCJpYXQiOjE3NDA2MDc5MzgsImV4cCI6MTc0MDYxMTUzOH0.nssQs0A2QwcisxYVB9_xxrEkl57tnNYFumUWZlqdHJg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Admin3\",\r\n    \"surname\":\"Admin3\",\r\n    \"username\":\"Admin3\",\r\n    \"email\":\"admin3@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/user/updateMe",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"user",
+								"updateMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/user/deleteUser/67bf9ad5ab80494ed95f6146",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"user",
+								"deleteUser",
+								"67bf9ad5ab80494ed95f6146"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Me /Only Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYWQwMTc0NmNkNTBkYTljMGYwOWEiLCJpYXQiOjE3NDA2MTQ5NjcsImV4cCI6MTc0MDYxODU2N30.IJU3QbQKa5AmMmGXjQ5aKt-zdvJymMq5U1uAEMOpULg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/user/deleteMe",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"user",
+								"deleteMe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password/ Only Admin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYWQwMTc0NmNkNTBkYTljMGYwOWEiLCJpYXQiOjE3NDA2MTQ5NjcsImV4cCI6MTc0MDYxODU2N30.IJU3QbQKa5AmMmGXjQ5aKt-zdvJymMq5U1uAEMOpULg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\":\"Kin4l2311@o6\",\r\n    \"newPassword\":\"admin123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/user/updatePassword",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"user",
+								"updatePassword"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Add Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYWQwMTc0NmNkNTBkYTljMGYwOWEiLCJpYXQiOjE3NDA2OTUxMzQsImV4cCI6MTc0MDY5ODczNH0.fkR4-FhpnNO1TYbXZc4l-8Uiv7lslZ_V3DPr5SRfiBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Technology\",\r\n    \"description\":\"It refers to any company related to technology.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/category/addcategory",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"category",
+								"addcategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYWQwMTc0NmNkNTBkYTljMGYwOWEiLCJpYXQiOjE3NDA2OTUxMzQsImV4cCI6MTc0MDY5ODczNH0.fkR4-FhpnNO1TYbXZc4l-8Uiv7lslZ_V3DPr5SRfiBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"IT\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/category/updtcategory/67c0edc66d3b327741fbe6cd",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"category",
+								"updtcategory",
+								"67c0edc66d3b327741fbe6cd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYWQwMTc0NmNkNTBkYTljMGYwOWEiLCJpYXQiOjE3NDA2OTUxMzQsImV4cCI6MTc0MDY5ODczNH0.fkR4-FhpnNO1TYbXZc4l-8Uiv7lslZ_V3DPr5SRfiBM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/category/deletecategory/67c0edc66d3b327741fbe6cd",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"category",
+								"deletecategory",
+								"67c0edc66d3b327741fbe6cd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "Add Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYWQwMTc0NmNkNTBkYTljMGYwOWEiLCJpYXQiOjE3NDA3NTI3MTEsImV4cCI6MTc0MDc1NjMxMX0.f5AbeTZZCuYiY14BIMKAfMumEBiciT-wBQVGPw_Um2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Wendy's\",\r\n    \"foundedYear\": 1920,\r\n    \"impactLevel\":\"High\",\r\n    \"category\":\"67c1c8964c88d45c4c3a39c6\",\r\n    \"telephone\":\"01254369\",\r\n    \"representative\":\"67c1c7d44c88d45c4c3a39b5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/company/registerCompany",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"company",
+								"registerCompany"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Report Excel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order\":\"Z-A\",\r\n    \"minYear\":\"34\",\r\n    \"maxYear\":\"80\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/company/report",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"company",
+								"report"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Company",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2JmYWQwMTc0NmNkNTBkYTljMGYwOWEiLCJpYXQiOjE3NDA3OTAyNzcsImV4cCI6MTc0MDc5Mzg3N30.HL5mmNSAdh66vxSCB-TTH56XaNZMMypbgccjFlZZGwA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"TIGO\",\r\n    \"foundedYear\": 1981,\r\n    \"impactLevel\":\"High\",\r\n    \"category\":\"67c1c83d4c88d45c4c3a39bf\",\r\n    \"telephone\":\"96548723\",\r\n    \"representative\":\"67c1c7c84c88d45c4c3a39af\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/coperex/v1/company/updateCompany/67c1caff5cadd5b7daee87c7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"coperex",
+								"v1",
+								"company",
+								"updateCompany",
+								"67c1caff5cadd5b7daee87c7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

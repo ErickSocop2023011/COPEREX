@@ -1,0 +1,168 @@
+[{
+  "_id": {
+    "$oid": "67c1ca7b5cadd5b7daee87b9"
+  },
+  "name": "Pollo Campero",
+  "foundedYear": 1971,
+  "yearsOfExperience": 54,
+  "impactLevel": "High",
+  "category": {
+    "$oid": "67c1c8964c88d45c4c3a39c6"
+  },
+  "telephone": "12345678",
+  "representative": {
+    "$oid": "67c1c7c84c88d45c4c3a39af"
+  },
+  "location": "Not specified",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T14:38:51.731Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:38:51.731Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1caff5cadd5b7daee87c7"
+  },
+  "name": "TIGO",
+  "foundedYear": 1981,
+  "yearsOfExperience": 44,
+  "impactLevel": "High",
+  "category": {
+    "$oid": "67c1c83d4c88d45c4c3a39bf"
+  },
+  "telephone": "96548723",
+  "representative": {
+    "$oid": "67c1c7c84c88d45c4c3a39af"
+  },
+  "location": "Not specified",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T14:41:03.703Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-01T01:03:23.948Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1cbfd5cadd5b7daee87d5"
+  },
+  "name": "DELL",
+  "foundedYear": 1950,
+  "yearsOfExperience": 75,
+  "impactLevel": "High",
+  "category": {
+    "$oid": "67c1c80a4c88d45c4c3a39b9"
+  },
+  "telephone": "15478296",
+  "representative": {
+    "$oid": "67c0e6840bb734d14689162e"
+  },
+  "location": "Not specified",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T14:45:17.018Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:45:17.018Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1cc385cadd5b7daee87de"
+  },
+  "name": "NVIDIA",
+  "foundedYear": 1987,
+  "yearsOfExperience": 38,
+  "impactLevel": "Medium",
+  "category": {
+    "$oid": "67c1c80a4c88d45c4c3a39b9"
+  },
+  "telephone": "85214637",
+  "representative": {
+    "$oid": "67c1c7d44c88d45c4c3a39b5"
+  },
+  "location": "Not specified",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T14:46:16.404Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:46:16.404Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1cc9f5cadd5b7daee87ec"
+  },
+  "name": "AMD",
+  "foundedYear": 2001,
+  "yearsOfExperience": 24,
+  "impactLevel": "High",
+  "category": {
+    "$oid": "67c1c80a4c88d45c4c3a39b9"
+  },
+  "telephone": "30578264",
+  "representative": {
+    "$oid": "67c1c7ae4c88d45c4c3a39a9"
+  },
+  "location": "Not specified",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T14:47:59.772Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:47:59.772Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1ccf55cadd5b7daee87f5"
+  },
+  "name": "McDonald's",
+  "foundedYear": 1920,
+  "yearsOfExperience": 105,
+  "impactLevel": "High",
+  "category": {
+    "$oid": "67c1c8964c88d45c4c3a39c6"
+  },
+  "telephone": "10576982",
+  "representative": {
+    "$oid": "67c1c7c84c88d45c4c3a39af"
+  },
+  "location": "Not specified",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T14:49:25.309Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:49:25.309Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1cd1c5cadd5b7daee87fe"
+  },
+  "name": "Wendy's",
+  "foundedYear": 1920,
+  "yearsOfExperience": 105,
+  "impactLevel": "High",
+  "category": {
+    "$oid": "67c1c8964c88d45c4c3a39c6"
+  },
+  "telephone": "01254369",
+  "representative": {
+    "$oid": "67c1c7d44c88d45c4c3a39b5"
+  },
+  "location": "Not specified",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-28T14:50:04.016Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-28T14:50:04.016Z"
+  }
+}]

@@ -1,0 +1,84 @@
+[{
+  "_id": {
+    "$oid": "67bf903c1c9af30063960502"
+  },
+  "name": "Admin2",
+  "surname": "Admin2",
+  "username": "admin123",
+  "email": "admin2@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$Df4qPMuNfyvSkHaTxxV21A$iqsIfo6o2ZrexjVWubiZi/P274BwMqTUX/Wyn9ZPtCw",
+  "role": "USER_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67bfad01746cd50da9c0f09a"
+  },
+  "name": "Admin3",
+  "surname": "Admin3",
+  "username": "Admin3",
+  "email": "admin3@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$6lsXcJuLRMLNoF9gRBeGIg$WIHgwa/6Rj6KpjQdsUQl7YB0XqTdBz4/pLmTI9g7W/E",
+  "role": "ADMIN_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c0e6840bb734d14689162e"
+  },
+  "name": "Jahir",
+  "surname": "Colindres",
+  "username": "esocop",
+  "email": "jahir@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$USMbgoElpjlR1LE2xJpMuw$wC5h2fcs8wJsORNVr0Mm7SSDJ3nFZH46pn0cAsAZV7Q",
+  "role": "USER_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c1c7994c88d45c4c3a39a3"
+  },
+  "name": "Erick",
+  "surname": "Socop",
+  "username": "esocop1",
+  "email": "esocop@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$/GLIopTwqbsUkFVu29RawA$QEooFesc4MtVCZyPbtjgd3i/M0xeQOIMAHLfUBaplI0",
+  "role": "USER_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c1c7ae4c88d45c4c3a39a9"
+  },
+  "name": "Luis",
+  "surname": "Cordova",
+  "username": "lcordova",
+  "email": "lcordova@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$J4F70aP+TzPJpIUXzedJsg$sYIGZy0SFjAuaFyJI+MowapaWPIiZ9q2iCWlN6lTLfE",
+  "role": "USER_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c1c7c84c88d45c4c3a39af"
+  },
+  "name": "Javier",
+  "surname": "Herrera",
+  "username": "jherrera",
+  "email": "jherrera@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$1tRJivEUmSf5I0woF3WFDA$E9VYEQf1XOoDa1pM5n3tHcq+yCTcCkO4EpgV6oes4MA",
+  "role": "USER_ROLE",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c1c7d44c88d45c4c3a39b5"
+  },
+  "name": "Diego",
+  "surname": "Urias",
+  "username": "durias",
+  "email": "durias@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$mDWHdx6VG1IVyvcyIBNnYQ$JsC8TNYs6v+QlOkSJIL9Fqffp1jY8DqQA5T2fBha6x4",
+  "role": "USER_ROLE",
+  "status": true
+}]

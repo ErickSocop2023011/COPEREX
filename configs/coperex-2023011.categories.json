@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "67c0ecce0c692ca389e2771f"
+  },
+  "name": "default",
+  "description": "This is the default category",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c0edc66d3b327741fbe6cd"
+  },
+  "name": "IT",
+  "description": "It refers to any company related to technology.",
+  "status": false
+},
+{
+  "_id": {
+    "$oid": "67c1c80a4c88d45c4c3a39b9"
+  },
+  "name": "Technology",
+  "description": "It refers to any company related to technology.",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c1c83d4c88d45c4c3a39bf"
+  },
+  "name": "Telecommunications",
+  "description": "It refers to any company related to Telecommunications.",
+  "status": true
+},
+{
+  "_id": {
+    "$oid": "67c1c8964c88d45c4c3a39c6"
+  },
+  "name": "Food",
+  "description": "It refers to any company related to Food.",
+  "status": true
+}]
